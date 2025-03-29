@@ -1,0 +1,168 @@
+
+.Champion-image{
+    position: absolute;
+    top: -70px;
+    width: max-content;
+    border: solid 5px gray;
+    object-fit: contain;
+}
+.Champion-image img{
+    width: 128px;
+    height: 128px;
+}
+.Champion-container{
+    position: relative;
+    width: 1000px;
+    margin-top: -700px;
+    z-index: 4;
+    font-family: 'Inter',sans-serif;
+    justify-content: center;
+    padding: 0 15px;
+   
+    box-shadow: rgba(9, 30, 66, 0.25) 0px 4px 8px -2px, rgba(9, 30, 66, 0.08) 0px 0px 0px 1px;
+    padding-bottom: 50px;
+}
+
+@media screen and (max-width:1100px){
+    .Champion-container{
+        max-width: 100%;
+    }
+}
+@media screen and (max-width:750px){
+    .Champion-container{
+        max-width: 100%;
+    }
+}
+.Skills-image-wrapper{
+    position: relative;
+    height: max-content;
+    text-align: center;
+    
+}
+.Skills-image-wrapper img{
+    height: 50px;
+}
+.Skills-Letter{
+    position: absolute;
+    font-size: 15px;
+    bottom: -2px;
+    left: 50%;
+    height: max-content;
+    padding: 0 4px;
+    border: 2px solid #17172e;
+    transform: translate(-50%, 50%);
+    border-radius: 50%;
+    background-color: gray;
+    box-sizing: content-box;
+    overflow: hidden;
+    line-height: 20px;
+}
+
+.Championbuild-container{
+    width: 700px;
+    position:absolute,
+}
+
+
+.first-row img{
+    width: 60px;
+}
+
+.RunesTab-Container{
+    display: flex;
+    
+}
+.RunesTab-Container img:hover{
+    cursor: pointer;
+}
+
+@media screen and (max-width:630px){
+    .RunesTab-Container{
+        flex-wrap: wrap;
+        justify-content: center !important; 
+        gap:50px;
+    }
+ 
+}
+.Runes-rows img{
+    width: 40px;
+    border-radius: 50%;
+    
+}
+
+.ChampionBuild{
+    min-height: max-content;
+    background-color: black;
+    padding-bottom: 50px;
+}
+
+.shards-container{
+    gap: 70px;
+    margin-top: 4px;
+}
+
+.RunesTab-Container{
+    display: flex;
+    justify-content: space-between;
+    
+}
+
+.secondary-Runes-rows img{
+    width: 34px;
+    border-radius: 50%;
+}
+
+.Header{
+    margin-bottom: 25px;
+    text-align: center;
+    font-size: 25px;
+}
+
+
+.items-card{
+    padding: 10px;
+    border: solid 2px white;
+    width: 100%;
+}
+.Cards-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(170px,1fr));
+    
+    width: 100%;
+    gap: 30px;
+}
+.loader-container{
+    height: 100vh;
+}
+.loader{
+    width: 80px;
+    height: 60px;
+    animation: rotate 2s linear infinite;
+}
+
+
+.Champ-card{
+    border: 1px solid white;
+    padding: 10px;
+}
+.Champ-card:hover{
+    opacity: 0.7;
+}
+.Champ-card img{
+    width: 50px;
+    height: 50px;
+    border-radius: 100%;
+}
+@keyframes rotate {
+    0%{
+        transform: scale(1);
+    }
+    50%{
+        
+        transform: scale(1.2);
+        
+    }
+    100%{
+        transform: scale(1);
+    }
+}

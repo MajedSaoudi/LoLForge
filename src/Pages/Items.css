@@ -1,0 +1,17 @@
+.Items-container{
+    width: 1000px;
+    padding: 0 15px;
+}
+
+.items-container{
+    grid-template-columns: repeat(auto-fit, minmax(25px,36px));
+    
+}
+.items-image{
+    border: 1px solid #565691;
+    overflow: hidden;
+}
+.items-image img{
+    height: 100%;
+    width: 100%;
+}

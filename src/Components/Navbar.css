@@ -1,0 +1,98 @@
+
+.navbar {
+    background-color: black;
+    padding: 3px 25px;
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    top: 0;
+    z-index: 1000;
+    position: fixed;
+    font-family: 'Inter',sans-serif;
+}
+
+.navbar-logo a {
+    color: #ffffff;
+    font-size: 24px;
+    text-decoration: none;
+    font-weight: bold;
+}
+.navbar-logo img{
+    height: 35px;
+}
+
+.burger-container{
+    display: none;
+}
+.navbar-links {
+    list-style: none;
+    display: flex;
+    gap: 20px; /* Space between links */
+}
+
+.navbar-links li a {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 16px;
+    transition: color 0.3s ease;
+}
+
+.navbar-links li a:hover {
+    /* Bright cyan on hover */
+    text-decoration: underline;
+}
+
+/* Responsive design for mobile */
+@media (max-width: 600px) {
+    .navbar{
+        padding: 3px 15px;
+    }
+    .burger-container{
+        display: flex;
+        align-items: center;
+        color: white;
+    }
+    .burger-container img{
+        height: 25px;
+        width: 27px;
+    }
+    .navbar-links {
+        position: absolute;
+        right: 100%;
+        top: 40px; /* Position below the navbar */
+        left: 0;
+        width: 100%;
+        background-color: black; /* Match navbar background */
+        flex-direction: column; /* Stack links vertically */
+        align-items: center;
+        gap: 10px;
+        padding: 20px 0;
+        transform: translateX(100%); /* Hidden by default */
+        transition: transform 0.3s ease-in-out; /* Smooth slide effect */
+    }
+
+    .navbar-links.active {
+        transform: translateX(0); /* Show when active */
+    }
+
+    .navbar-links li {
+        display: none; /* Hidden by default */
+        width: 100%;
+        text-align: center;
+    }
+
+    .navbar-links.active li {
+        display: block; /* Show links when menu is active */
+    }
+
+    .navbar-links li  {
+        display: block;
+        padding: 10px;
+        font-size: 18px; /* Slightly larger for mobile */
+    }
+    .navbar-links li a{
+        justify-content: center;
+        gap: 5px;
+    }
+}

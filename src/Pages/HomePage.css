@@ -1,0 +1,85 @@
+.HomePage{
+   
+    
+    height: 100vh;
+}
+.background-wallpaper{
+    height: 900px;
+    position: relative;
+    z-index: 1;
+}
+.background-wallpaper:after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 900px;
+    background-image: linear-gradient(180deg, rgba(7, 7, 32, .75), #000000);
+    display: block;
+    z-index: -1;
+}
+
+.Champion-Session{
+    width: 1000px;
+    padding: 0px 15px;
+    font-family: 'Inter';
+}
+.Champion-Session h1{
+    font-weight: 600;
+    font-size: 30px;
+}
+.search-input{
+    width: 600px;
+}
+
+.search-input:focus{
+    outline: none;
+    border: none;
+}
+
+.Champions-Container{
+    grid-template-columns: repeat(auto-fit, minmax(75px,1fr));
+}
+.Champions-Container img:hover{
+    transform: scale(1.105);
+    transition: transform ease 0.3s;
+    cursor: pointer;
+}
+
+.champion-image{
+    overflow: hidden;
+    max-height: max-content;
+}
+@media screen and (max-width : 1000px){
+    .search-input{
+        width: 100%;
+    }
+    .search-container{
+        width: 100%;
+    }
+}
+@media screen and (max-width : 600px){
+    .search-input{
+        width: 100%;
+    }
+    .search-container{
+        width: 100%;
+        border-radius: 0px;
+    }
+    
+    .Homepage-video {
+
+        width: 100% !important;
+       
+    }
+}
+
+
+
+
+
+.Homepage-video{
+    width: 560px;
+ 
+}

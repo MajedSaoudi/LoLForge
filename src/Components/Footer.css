@@ -1,0 +1,45 @@
+.footer-container{
+    display: flex;
+    width: 1000px;
+    padding: 0px 15px;
+}
+
+
+.footer-links-list img{
+    height: 15px;
+}
+.footer-link-item{
+    display: flex;
+    height: 25px;
+    align-items: center;
+    margin-top: 10px;
+    font-size: 15px;
+}
+.footer-icon{
+    width: 18px;
+    height: 18px;
+    margin-right: .5rem;
+}
+
+.Links{
+    margin-top: 15px;
+}
+.Link:hover{
+    text-decoration: underline;
+    cursor: pointer;
+}
+.Link p{
+    margin-top: 10px;
+    font-size: 15px;
+}
+
+
+@media screen and (max-width : 640px){
+    .footer-container{
+        display: block;
+    }
+    .Links-container{
+        justify-content: space-between;
+        padding: 0;
+    }
+}
